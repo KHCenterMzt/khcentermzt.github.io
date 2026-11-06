@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KH Rehab & Training Center · Fisioterapia y entrenamiento en Mazatlán</title>
+<meta name="description" content="Fisioterapia, rehabilitación y entrenamiento en un solo lugar en Mazatlán. Quítate el dolor y entrena para que no regrese. Agenda tu valoración por WhatsApp.">
+<meta property="og:title" content="KH Rehab & Training Center · Mazatlán">
+<meta property="og:description" content="Recupérate. Entrena. Vuelve más fuerte. Agenda tu valoración por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://khcentermzt.github.io/logo.png">
+<meta property="og:url" content="https://khcentermzt.github.io/">
+<link rel="canonical" href="https://khcentermzt.github.io/">
+<meta name="theme-color" content="#0B1830">
+<link rel="icon" href="logo.png">
+<style>
+@font-face{font-family:'Archivo Black';src:url(fonts/ArchivoBlack.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Sora;font-weight:400;src:url(fonts/Sora-400.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Sora;font-weight:600;src:url(fonts/Sora-600.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Sora;font-weight:700;src:url(fonts/Sora-700.woff2) format('woff2');font-display:swap}
+:root{--navy:#0B1830;--azul:#1F8FFF;--cyan:#7FDFFF;--hielo:#EEF3F9;--coral:#FF5A5F;--wa:#25D366;--tx:#0B1830;--mut:#52607a}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Sora,system-ui,sans-serif;color:var(--tx);background:#fff;line-height:1.6;font-size:16px}
+h1,h2,h3{font-family:'Archivo Black',Impact,sans-serif;font-weight:400;line-height:1.05;text-transform:uppercase}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:14px 26px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:16px;font-family:inherit}
+.wa{background:var(--wa);color:#06260f}.wa:hover{filter:brightness(1.06)}
+.ghost{background:transparent;color:#fff;border:2px solid #ffffff55}.ghost:hover{border-color:var(--cyan);color:var(--cyan)}
+.ghost.dark{color:var(--navy);border-color:#0B183033}.ghost.dark:hover{border-color:var(--azul);color:var(--azul)}
+mark{background:var(--cyan);color:var(--navy);padding:0 .15em}
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;border-bottom:1px solid #ffffff14}
+header.top .wrap{display:flex;align-items:center;gap:20px;height:70px}
+header.top img{height:54px;width:auto}
+nav{margin-left:auto;display:flex;gap:26px;font-size:14px;font-weight:600}
+nav a{text-decoration:none;opacity:.85}nav a:hover{opacity:1;color:var(--cyan)}
+header.top .btn{padding:10px 18px;font-size:14px}
+@media(max-width:820px){nav{display:none}header.top .btn{margin-left:auto}}
+/* hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-180px;top:-200px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,#1F8FFF55,transparent 65%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;padding-top:70px;padding-bottom:84px;align-items:center;position:relative}
+.eyebrow{display:inline-block;color:var(--cyan);font-weight:700;font-size:13px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-size:clamp(38px,6vw,68px)}
+.hero p.lead{font-size:18px;opacity:.85;margin:22px 0 30px;max-width:540px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.card{background:#fff;color:var(--tx);border-radius:22px;padding:26px;box-shadow:0 24px 60px #0008}
+.card h2{font-size:22px;margin-bottom:4px}.card p{color:var(--mut);font-size:14px;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a{background:var(--hielo);border-radius:999px;padding:10px 16px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid transparent;transition:.15s}
+.chips a:hover{border-color:var(--azul);background:#fff;transform:translateY(-2px)}
+.card small{display:block;margin-top:14px;color:var(--mut);font-size:12px}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:56px}}
+/* strip */
+.strip{background:var(--azul);color:var(--navy)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding-top:16px;padding-bottom:16px;font-weight:700;font-size:14px}
+.strip span{display:flex;gap:8px;align-items:center}
+@media(max-width:820px){.strip .wrap{grid-template-columns:1fr 1fr}}
+/* sections */
+section{padding:84px 0}
+.sec-h{max-width:640px;margin-bottom:40px}
+.sec-h h2{font-size:clamp(30px,4.4vw,46px)}
+.sec-h p{color:var(--mut);margin-top:14px}
+.light{background:var(--hielo)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border-radius:20px;padding:28px;position:relative;border-bottom:5px solid var(--cyan)}
+.step:before{counter-increment:s;content:counter(s);font-family:'Archivo Black';font-size:54px;color:var(--cyan);-webkit-text-stroke:2px var(--navy);position:absolute;right:20px;top:8px;line-height:1}
+.step h3{font-size:20px;margin-bottom:10px;padding-right:44px}.step p{color:var(--mut);font-size:15px}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.s{background:#fff;border:2px solid #0B183014;border-radius:20px;padding:24px;transition:.2s;text-decoration:none;display:block}
+.s:hover{border-color:var(--azul);transform:translateY(-4px);box-shadow:0 14px 30px #1F8FFF22}
+.s .ti{display:inline-flex;width:56px;height:56px;border-radius:16px;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--azul),var(--cyan));margin-bottom:16px;box-shadow:0 8px 18px #1F8FFF33}.s .ti svg{width:30px;height:30px;fill:var(--navy)}
+.s h3{font-size:16px;margin-bottom:8px}.s p{font-size:14px;color:var(--mut)}
+.s em{display:block;margin-top:12px;font-style:normal;font-weight:700;font-size:13px;color:var(--azul)}
+@media(max-width:980px){.svc{grid-template-columns:1fr 1fr}}@media(max-width:560px){.svc{grid-template-columns:1fr}}
+.bridge{background:var(--navy);color:#fff;border-radius:28px;padding:44px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center;margin-top:44px}
+.bridge h3{font-size:clamp(24px,3.4vw,36px)}.bridge p{opacity:.8;margin-top:12px}
+@media(max-width:820px){.bridge{grid-template-columns:1fr;padding:30px}}
+/* horario / mapa */
+.loc{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:stretch}
+@media(max-width:900px){.loc{grid-template-columns:1fr}}
+.panel{background:#fff;border-radius:22px;padding:30px}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px;background:var(--hielo)}
+.status i{width:10px;height:10px;border-radius:50%;background:#9aa6bb}
+.status.open i{background:var(--wa);box-shadow:0 0 0 4px #25D36633}
+.status.open{background:#E6F8EC}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}
+td{padding:9px 0;border-bottom:1px solid #0B18301a}td:last-child{text-align:right;font-weight:600}
+tr.hoy td{color:var(--azul);font-weight:700}
+.addr{font-weight:600;margin:14px 0}
+.map{border-radius:22px;overflow:hidden;min-height:420px;background:#dfe7f2;position:relative}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* faq */
+.faq{max-width:760px}
+details{background:#fff;border-radius:16px;padding:18px 22px;margin-bottom:10px;border:2px solid #0B183012}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary:after{content:"+";color:var(--azul);font-size:22px;line-height:1}
+details[open] summary:after{content:"–"}
+details p{color:var(--mut);margin-top:10px;font-size:15px}
+/* cta final */
+.final{background:var(--navy);color:#fff;text-align:center}
+.final h2{font-size:clamp(30px,5vw,54px);max-width:760px;margin:0 auto 14px}
+.final p{opacity:.8;margin-bottom:28px}
+footer{background:#07101f;color:#ffffffb0;padding:36px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer a{color:var(--cyan);text-decoration:none;font-weight:600;margin-right:16px}
+footer small{display:block;width:100%;opacity:.6;font-size:12px;line-height:1.5}
+.float{position:fixed;right:18px;bottom:18px;z-index:60;box-shadow:0 10px 30px #0006;padding:14px 20px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.ico{display:inline-flex;width:42px;height:42px;border-radius:50%;align-items:center;justify-content:center;background:#ffffff14;transition:.15s}.ico:hover{background:var(--cyan)}.ico svg{width:20px;height:20px;fill:#fff}.ico:hover svg{fill:var(--navy)}
+.social{display:flex;gap:10px}
+.team{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.pro{background:#fff;border-radius:24px;overflow:hidden;display:grid;grid-template-columns:200px 1fr;border:2px solid #0B183014}
+.pro .ph{background:linear-gradient(160deg,var(--navy),#16315f);display:flex;align-items:center;justify-content:center;min-height:240px;position:relative}.pro .ph img{width:100%;height:100%;object-fit:cover;object-position:center 20%;position:absolute;inset:0}.pro .ph span{font-family:'Archivo Black';font-size:56px;color:var(--cyan)}
+.pro .tx{padding:24px}.pro .tx small{color:var(--azul);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:11px}.pro h3{font-size:22px;margin:6px 0 10px}.pro p{color:var(--mut);font-size:15px}
+.tag-b{display:inline-block;margin-top:12px;background:#FFF3C4;color:#6a5200;border-radius:8px;padding:3px 10px;font-size:11px;font-weight:700}
+@media(max-width:900px){.team{grid-template-columns:1fr}.pro{grid-template-columns:140px 1fr}}@media(max-width:480px){.pro{grid-template-columns:1fr}.pro .ph{min-height:200px}}
+.casos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.caso{background:#fff;border-radius:20px;padding:26px;border:2px solid #0B183014}.caso.demo{border:2px dashed #1F8FFF88;background:#ffffffaa}.caso q{display:block;font-size:16px;line-height:1.55;margin-bottom:16px;quotes:"“" "”"}.caso b{display:block}.caso small{color:var(--mut)}
+@media(max-width:900px){.casos{grid-template-columns:1fr}}
+.follow{background:var(--navy);color:#fff;border-radius:28px;padding:40px;display:grid;grid-template-columns:1fr;gap:26px}.follow h2{font-size:clamp(28px,4vw,42px)}.follow p{opacity:.8;margin:12px 0 18px}
+.feed{border-radius:20px;overflow:hidden;position:relative}.feed iframe{width:100%;height:620px;border:0;display:block;background:#fff;border-radius:16px}
+.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:900px){.follow{padding:26px}.reels{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"PhysicalTherapy","name":"KH Rehab & Training Center","image":"https://khcentermzt.github.io/logo.png","url":"https://khcentermzt.github.io/","telephone":"+52 669 333 8352","address":{"@type":"PostalAddress","streetAddress":"Francisco Solís #2705-2, Local 2, Col. Francisco Villa","addressLocality":"Mazatlán","addressRegion":"Sinaloa","addressCountry":"MX"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"15:00","closes":"20:00"}],"sameAs":["https://www.instagram.com/khcentermzt"]}
+</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a href="#inicio"><img src="logo.png" alt="KH Rehab & Training Center"></a>
+  <nav><a href="#como">Cómo funciona</a><a href="#servicios">Servicios</a><a href="#equipo">Profesionales</a><a href="#casos">Casos</a><a href="#horario">Horario</a><a href="#redes">Redes</a></nav>
+  <a class="btn wa" data-kw="CITA" href="#">Agendar por WhatsApp</a>
+</div></header>
+
+<main id="inicio">
+<div class="hero"><div class="wrap">
+  <div>
+    <span class="eyebrow">Fisioterapia · Entrenamiento · Mazatlán</span>
+    <h1>Recupérate. Entrena. Vuelve más <mark>fuerte.</mark></h1>
+    <p class="lead">El único lugar en Mazatlán donde el mismo equipo te quita el dolor y te entrena para que no regrese.</p>
+    <div class="cta">
+      <a class="btn wa" data-kw="CITA" href="#">Agendar mi valoración</a>
+      <a class="btn ghost" href="#servicios">Ver servicios</a>
+    </div>
+  </div>
+  <div class="card" id="dolor">
+    <h2>¿Qué te duele?</h2>
+    <p>Elige y te escribimos por WhatsApp para darte una cita de valoración.</p>
+    <div class="chips">
+      <a data-kw="ESPALDA" href="#">Espalda</a><a data-kw="RODILLA" href="#">Rodilla</a><a data-kw="DOLOR" href="#">Cuello u hombro</a>
+      <a data-kw="CORRER" href="#">Corro y me lesiono</a><a data-kw="PADEL" href="#">Pádel o deporte</a><a data-kw="MAYOR" href="#">Quiero moverme sin miedo (+55)</a>
+      <a data-kw="ENTRENAR" href="#">Quiero entrenar seguro</a><a data-kw="CITA" href="#">Otra cosa</a>
+    </div>
+    <small>Sin compromiso. La primera cita es una valoración para encontrar la causa.</small>
+  </div>
+</div></div>
+
+<div class="strip"><div class="wrap">
+  <span>✔ Fisio + gimnasio bajo el mismo techo</span><span>✔ Primero una valoración</span><span>✔ Lunes a viernes</span><span>✔ Col. Francisco Villa, Mazatlán</span>
+</div></div>
+
+<section id="como" class="light"><div class="wrap">
+  <div class="sec-h"><h2>Así es <mark>tu proceso</mark></h2><p>Sin vueltas: entendemos qué te pasa y te armamos un plan para que el dolor no regrese.</p></div>
+  <div class="steps">
+    <div class="step"><h3>Valoración</h3><p>Revisamos tu historial, tu movimiento y dónde te duele para encontrar la causa, no solo el síntoma.</p></div>
+    <div class="step"><h3>Plan a tu medida</h3><p>Te explicamos qué sigue, cuánto tiempo y qué esperar. Tratamiento claro, sin promesas mágicas.</p></div>
+    <div class="step"><h3>Fisio + entrenamiento</h3><p>Cuando estás mejor, el mismo equipo te ayuda a ganar fuerza para volver a lo tuyo y evitar la recaída.</p></div>
+  </div>
+</div></section>
+
+<section id="servicios"><div class="wrap">
+  <div class="sec-h"><h2>Lo que <mark>hacemos</mark></h2><p>Cada servicio empieza con una valoración. Escríbenos y te decimos cuál te conviene.</p></div>
+  <div class="svc">
+    <a class="s" data-kw="DOLOR" href="#"><span class="ti"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M230.33,141.06a24.34,24.34,0,0,0-18.61-4.77C230.5,117.33,240,98.48,240,80c0-26.47-21.29-48-47.46-48A47.58,47.58,0,0,0,156,48.75,47.58,47.58,0,0,0,119.46,32C93.29,32,72,53.53,72,80c0,11,3.24,21.69,10.06,33a31.87,31.87,0,0,0-14.75,8.4L44.69,144H16A16,16,0,0,0,0,160v40a16,16,0,0,0,16,16H120a7.93,7.93,0,0,0,1.94-.24l64-16a6.94,6.94,0,0,0,1.19-.4L226,182.82l.44-.2a24.6,24.6,0,0,0,3.93-41.56Zm-10.9,27.15-38,16.18L119,200H56V155.31l22.63-22.62A15.86,15.86,0,0,1,89.94,128H140a12,12,0,0,1,0,24H112a8,8,0,0,0,0,16h32a8.32,8.32,0,0,0,1.79-.2l67-15.41.31-.08a8.6,8.6,0,0,1,6.3,15.9Z"/></svg></span><h3>Fisioterapia</h3><p>Dolor de espalda, cuello, hombro y articulaciones: valoramos la causa y la tratamos.</p><em>Pedir cita →</em></a>
+    <a class="s" data-kw="RODILLA" href="#"><span class="ti"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M128,116a12,12,0,1,1-12,12A12,12,0,0,1,128,116Zm84.28,39.72a40,40,0,1,1-56.56,56.56L128,184.57l-27.72,27.71a40,40,0,1,1-56.56-56.56L71.43,128,43.72,100.28a40,40,0,1,1,56.56-56.56L128,71.43l27.72-27.71a40,40,0,1,1,56.56,56.56L184.57,128Zm-95.59,17.53L82.75,139.31,55,167A24,24,0,1,0,89,201ZM161.94,128,128,94.06,94.06,128,128,161.94Zm39-39A24,24,0,1,0,167,55L139.31,82.75l33.94,33.94Z"/></svg></span><h3>Post-operatorio</h3><p>Rehabilitación después de cirugía de rodilla, cadera u hombro, con progresión segura.</p><em>Pedir cita →</em></a>
+    <a class="s" data-kw="PADEL" href="#"><span class="ti"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M24.81,115.41a103.9,103.9,0,0,1,90.6-90.65,4,4,0,0,1,4.47,3.79,87.82,87.82,0,0,1-91.27,91.33A4,4,0,0,1,24.81,115.41Zm202.54,20.7c-1.12,0-2.23-.07-3.35-.07a87.84,87.84,0,0,0-87.88,91.41,4,4,0,0,0,4.47,3.79,103.9,103.9,0,0,0,90.6-90.66A4,4,0,0,0,227.35,136.11Zm-76.89,14.35A103.33,103.33,0,0,1,224,120c1,0,2.06,0,3.09,0a4,4,0,0,0,4.12-4.43,103.91,103.91,0,0,0-90.88-90.89,4,4,0,0,0-4.43,4.12,103.72,103.72,0,0,1-30.36,76.7A103.33,103.33,0,0,1,32,136c-1,0-2.06,0-3.09,0a4,4,0,0,0-4.12,4.43,103.91,103.91,0,0,0,90.88,90.89,4,4,0,0,0,4.43-4.12A103.72,103.72,0,0,1,150.46,150.46Z"/></svg></span><h3>Fisio deportiva</h3><p>Lesiones de pádel, fútbol, gimnasio y más. Readaptación para volver a competir.</p><em>Pedir cita →</em></a>
+    <a class="s" data-kw="CORRER" href="#"><span class="ti"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M213.85,125.46l-112,120a8,8,0,0,1-13.69-7l14.66-73.33L45.19,143.49a8,8,0,0,1-3-13l112-120a8,8,0,0,1,13.69,7L153.18,90.9l57.63,21.61a8,8,0,0,1,3,12.95Z"/></svg></span><h3>Descarga y recuperación</h3><p>Electroterapia y presoterapia para soltar la carga después de entrenar o correr.</p><em>Pedir cita →</em></a>
+    <a class="s" data-kw="ENTRENAR" href="#"><span class="ti"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M200,64V192a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V136H104v56a16,16,0,0,1-16,16H72a16,16,0,0,1-16-16V64A16,16,0,0,1,72,48H88a16,16,0,0,1,16,16v56h48V64a16,16,0,0,1,16-16h16A16,16,0,0,1,200,64ZM36,72H32A16,16,0,0,0,16,88v32H8.27A8.18,8.18,0,0,0,0,127.47,8,8,0,0,0,8,136h8v32a16,16,0,0,0,16,16h4a4,4,0,0,0,4-4V76A4,4,0,0,0,36,72Zm220,55.47a8.18,8.18,0,0,0-8.25-7.47H240V88a16,16,0,0,0-16-16h-4a4,4,0,0,0-4,4V180a4,4,0,0,0,4,4h4a16,16,0,0,0,16-16V136h8A8,8,0,0,0,256,127.47Z"/></svg></span><h3>Entrenamiento personalizado</h3><p>Plan hecho para ti, con supervisión, para ganar fuerza sin lesionarte.</p><em>Pedir cita →</em></a>
+    <a class="s" data-kw="ENTRENAR" href="#"><span class="ti"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M64.12,147.8a4,4,0,0,1-4,4.2H16a8,8,0,0,1-7.8-6.17,8.35,8.35,0,0,1,1.62-6.93A67.79,67.79,0,0,1,37,117.51a40,40,0,1,1,66.46-35.8,3.94,3.94,0,0,1-2.27,4.18A64.08,64.08,0,0,0,64,144C64,145.28,64,146.54,64.12,147.8Zm182-8.91A67.76,67.76,0,0,0,219,117.51a40,40,0,1,0-66.46-35.8,3.94,3.94,0,0,0,2.27,4.18A64.08,64.08,0,0,1,192,144c0,1.28,0,2.54-.12,3.8a4,4,0,0,0,4,4.2H240a8,8,0,0,0,7.8-6.17A8.33,8.33,0,0,0,246.17,138.89Zm-89,43.18a48,48,0,1,0-58.37,0A72.13,72.13,0,0,0,65.07,212,8,8,0,0,0,72,224H184a8,8,0,0,0,6.93-12A72.15,72.15,0,0,0,157.19,182.07Z"/></svg></span><h3>Entrenamiento grupal</h3><p>Entrena acompañado, con técnica cuidada y la energía de un grupo.</p><em>Pedir cita →</em></a>
+    <a class="s" data-kw="MAYOR" href="#"><span class="ti"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M120,48a32,32,0,1,1,32,32A32,32,0,0,1,120,48Zm88,88c-28.64,0-41.81-13.3-55.75-27.37-3.53-3.57-7.18-7.26-11-10.58-37-32.14-96.22,22.73-98.72,25.08a8,8,0,0,0,10.95,11.66A163.88,163.88,0,0,1,84,113c13.78-7.38,25.39-10.23,34.7-8.58L64.66,228.81a8,8,0,0,0,4.15,10.52A7.84,7.84,0,0,0,72,240a8,8,0,0,0,7.34-4.81l33.59-77.27L144,180.12V232a8,8,0,0,0,16,0V176a8,8,0,0,0-3.35-6.51l-37.2-26.57L132.88,112c2.64,2.44,5.26,5.07,8,7.84C155.05,134.19,172.69,152,208,152a8,8,0,0,0,0-16Z"/></svg></span><h3>Movilidad y fuerza +55</h3><p>Equilibrio, fuerza y movilidad para mantener tu independencia.</p><em>Pedir cita →</em></a>
+    <a class="s" data-kw="CITA" href="#"><span class="ti"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,39.38,24.79-17.05a88.41,88.41,0,0,1,36.18,27l-8,26.94c-.2,0-.41.1-.61.17l-22.82,7.41a7.59,7.59,0,0,0-1,.4L136,88.62c0-.2,0-.41,0-.62V64C136,63.79,136,63.58,136,63.38ZM95.24,46.33,120,63.38c0,.2,0,.41,0,.62V88c0,.21,0,.42,0,.62L91.44,108.29a7.59,7.59,0,0,0-1-.4l-22.82-7.41c-.2-.07-.41-.12-.61-.17l-8-26.94A88.41,88.41,0,0,1,95.24,46.33Zm-13,129.09H53.9a87.4,87.4,0,0,1-13.79-43.07l22-16.88a5.77,5.77,0,0,0,.58.22l22.83,7.42a7.83,7.83,0,0,0,.93.22l10.79,31.42c-.15.18-.3.36-.44.55L82.7,174.71A7.8,7.8,0,0,0,82.24,175.42ZM150.69,213a88.16,88.16,0,0,1-45.38,0L95.25,184.6c.13-.16.27-.31.39-.48l14.11-19.42a7.66,7.66,0,0,0,.46-.7h35.58a7.66,7.66,0,0,0,.46.7l14.11,19.42c.12.17.26.32.39.48Zm23.07-37.61a7.8,7.8,0,0,0-.46-.71L159.19,155.3c-.14-.19-.29-.37-.44-.55l10.79-31.42a7.83,7.83,0,0,0,.93-.22l22.83-7.42a5.77,5.77,0,0,0,.58-.22l22,16.88a87.4,87.4,0,0,1-13.79,43.07Z"/></svg></span><h3>Iniciación deportiva</h3><p>Un primer paso sano al deporte para niñas y niños, guiado por el equipo.</p><em>Preguntar →</em></a>
+  </div>
+  <div class="bridge">
+    <div><h3>Del dolor a <mark>entrenar</mark></h3><p>Cuando te damos de alta no te soltamos: te invitamos a entrenar aquí mismo para que la lesión no regrese.</p></div>
+    <div><a class="btn wa" data-kw="CITA" href="#">Quiero mi valoración</a></div>
+  </div>
+</div></section>
+
+
+<section id="equipo"><div class="wrap">
+  <div class="sec-h"><h2>Nuestros <mark>profesionales</mark></h2><p>El mismo equipo te trata y te entrena. Conócelos.</p></div>
+  <div class="team" id="teamBox"></div>
+</div></section>
+
+<section id="casos" class="light"><div class="wrap">
+  <div class="sec-h"><h2>Casos que nos <mark>enorgullecen</mark></h2><p>Personas reales que volvieron a moverse y a entrenar. Compartido con su permiso.</p></div>
+  <div class="casos" id="casosBox"></div>
+</div></section>
+
+<section id="redes"><div class="wrap">
+  <div class="follow">
+    <div>
+      <h2>Síguenos en <mark>redes</mark></h2>
+      <p>Ejercicios, casos reales y consejos para cuidar tu cuerpo, cada semana.</p>
+      <div class="social">
+        <a class="ico" aria-label="Instagram de KH" target="_blank" rel="noopener" href="https://www.instagram.com/khcentermzt"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.3 5.7a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z"/></svg></a>
+        <a class="ico" aria-label="Facebook de KH" target="_blank" rel="noopener" href="https://www.facebook.com/1041890385665926"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.5-3.2h-3.2V8.7c0-.9.4-1.7 1.8-1.7h1.5V4.2A17 17 0 0 0 14.3 4c-2.5 0-4.1 1.5-4.1 4.2v2.6H7.5V14h2.7v8z"/></svg></a>
+        <a class="ico" aria-label="WhatsApp de KH" data-kw="CITA" href="#"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4zm-3 3.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4s-.2-.2-.5-.4l-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6 6 0 0 1-3-2.6c-.1-.2 0-.3.1-.5l.5-.6c.1-.1.2-.3.3-.5s0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4z"/></svg></a>
+      </div>
+    </div>
+    <div class="feed" id="feedBox"></div>
+  </div>
+</div></section>
+
+<section id="horario" class="light"><div class="wrap">
+  <div class="sec-h"><h2>Horario y <mark>ubicación</mark></h2></div>
+  <div class="loc" id="ubicacion">
+    <div class="panel">
+      <span class="status" id="status"><i></i><b id="st">Revisando horario…</b></span>
+      <table id="hr">
+        <tr data-d="1"><td>Lunes</td><td>8:00–13:00 · 15:00–20:00</td></tr>
+        <tr data-d="2"><td>Martes</td><td>8:00–13:00 · 15:00–20:00</td></tr>
+        <tr data-d="3"><td>Miércoles</td><td>8:00–13:00 · 15:00–20:00</td></tr>
+        <tr data-d="4"><td>Jueves</td><td>8:00–13:00 · 15:00–20:00</td></tr>
+        <tr data-d="5"><td>Viernes</td><td>8:00–13:00 · 15:00–20:00</td></tr>
+        <tr data-d="6"><td>Sábado</td><td>Cerrado</td></tr>
+        <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+      </table>
+      <p class="addr">📍 Francisco Solís #2705-2, Local 2<br>Col. Francisco Villa, Mazatlán, Sinaloa</p>
+      <div class="cta">
+        <a class="btn wa" data-kw="CITA" href="#">WhatsApp 669 333 8352</a>
+        <a class="btn ghost dark" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Francisco+Sol%C3%ADs+2705+Mazatl%C3%A1n+Sinaloa">Cómo llegar</a>
+      </div>
+    </div>
+    <div class="map"><iframe title="Mapa de KH Rehab & Training Center" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Francisco+Sol%C3%ADs+2705+Mazatl%C3%A1n+Sinaloa&output=embed"></iframe></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="sec-h"><h2>Preguntas <mark>frecuentes</mark></h2></div>
+  <div class="faq">
+    <details><summary>¿Qué pasa en la primera cita?</summary><p>Es una valoración: te escuchamos, revisamos tu movimiento y encontramos la causa de tu molestia. Al final te explicamos el plan que sigue.</p></details>
+    <details><summary>¿Cómo agendo?</summary><p>Por WhatsApp al 669 333 8352. Te proponemos dos horarios y confirmamos tu cita. Respondemos en horario de atención.</p></details>
+    <details><summary>¿Atienden a personas mayores?</summary><p>Sí. Trabajamos movilidad, fuerza y equilibrio para que mantengas tu independencia, con progresión segura.</p></details>
+    <details><summary>¿Atienden a niños?</summary><p>Tenemos iniciación deportiva para niñas y niños. Escríbenos por WhatsApp y te contamos cómo funciona.</p></details>
+    <details><summary>Ya me operaron, ¿pueden ayudarme?</summary><p>Sí, hacemos rehabilitación post-operatoria de rodilla, cadera y hombro. Lleva los datos de tu cirugía a la valoración.</p></details>
+    <details><summary>¿Tengo que entrenar para ir a fisioterapia?</summary><p>No. Puedes venir solo por fisioterapia. Cuando estés mejor, te invitamos a entrenar para que la lesión no regrese.</p></details>
+  </div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Tu cuerpo <mark>puede más</mark></h2>
+  <p>Escríbenos hoy y agenda tu valoración en Mazatlán.</p>
+  <a class="btn wa" data-kw="CITA" href="#">Agendar por WhatsApp</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div><b style="color:#fff">KH Rehab & Training Center</b><br>Francisco Solís #2705-2, Local 2 · Col. Francisco Villa · Mazatlán</div>
+  <div class="social"><a class="ico" aria-label="Instagram" target="_blank" rel="noopener" href="https://www.instagram.com/khcentermzt"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.3 5.7a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z"/></svg></a><a class="ico" aria-label="Facebook" target="_blank" rel="noopener" href="https://www.facebook.com/1041890385665926"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.5-3.2h-3.2V8.7c0-.9.4-1.7 1.8-1.7h1.5V4.2A17 17 0 0 0 14.3 4c-2.5 0-4.1 1.5-4.1 4.2v2.6H7.5V14h2.7v8z"/></svg></a><a class="ico" aria-label="WhatsApp" data-kw="CITA" href="#"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4zm-3 3.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4s-.2-.2-.5-.4l-1.7-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6 6 0 0 1-3-2.6c-.1-.2 0-.3.1-.5l.5-.6c.1-.1.2-.3.3-.5s0-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4z"/></svg></a></div>
+  <small>La información de este sitio es orientativa y no sustituye una valoración profesional. Cada caso se evalúa de forma individual y los resultados varían entre personas.</small>
+</div></footer>
+
+<a class="btn wa float" data-kw="CITA" href="#" aria-label="Escribir por WhatsApp">💬 WhatsApp</a>
+
+<script>
+/* ===== CONTENIDO EDITABLE (aquí se cambia todo sin tocar el diseño) ===== */
+var PROFESIONALES=[
+ {nombre:"LFT Héctor Tapia",rol:"Fisioterapeuta",foto:"fotos/hector.jpg",texto:"Te valora, encuentra la causa de tu dolor o lesión y lleva tu rehabilitación paso a paso."},
+ {nombre:"Arturo Carranza",rol:"Preparador Físico",foto:"fotos/arturo.jpg",texto:"Diseña y guía tu entrenamiento para que ganes fuerza y vuelvas a lo tuyo sin lesionarte."}
+];
+/* foto: ruta de la imagen real (ej. "fotos/hector.jpg"); texto: 2 o 3 líneas de su presentación. */
+var CASOS=[];
+/* cada caso: {nombre:"Nombre o iniciales",detalle:"Qué lograron",frase:"Lo que dijo, con su permiso"} */
+var REELS=["https://www.instagram.com/reel/DfGaBikguOX/","https://www.instagram.com/reel/DfI-0W0ADmj/","https://www.instagram.com/reel/De2515OFA5x/"];
+/* permalinks de Reels de Instagram, ej. "https://www.instagram.com/reel/XXXX/" */
+/* ======================================================================== */
+(function(){
+  var t=document.getElementById("teamBox");
+  t.innerHTML=PROFESIONALES.map(function(p){
+    var ini=p.nombre.replace(/^(LFT|Lic\.|Dr\.|Dra\.)\s*/,"").split(" ").map(function(x){return x[0]}).join("").slice(0,2);
+    var ph=p.foto?'<img loading="lazy" src="'+p.foto+'" alt="'+p.nombre+', '+p.rol+' en KH">':'<span>'+ini+'</span>';
+    var tx=p.texto?'<p>'+p.texto+'</p>':'<p>Presentación del profesional, su formación y cómo trabaja con cada paciente.</p><span class="tag-b">BORRADOR · falta foto y descripción</span>';
+    return '<article class="pro"><div class="ph">'+ph+'</div><div class="tx"><small>'+p.rol+'</small><h3>'+p.nombre+'</h3>'+tx+'</div></article>';
+  }).join("");
+  var c=document.getElementById("casosBox");
+  if(CASOS.length){c.innerHTML=CASOS.map(function(k){return '<div class="caso"><q>'+k.frase+'</q><b>'+k.nombre+'</b><small>'+k.detalle+'</small></div>'}).join("")}
+  else{var sc=document.getElementById("casos");if(sc)sc.remove();var nl=document.querySelector('nav a[href="#casos"]');if(nl)nl.remove();}
+  var f=document.getElementById("feedBox");
+  if(REELS.length){
+    f.style.background="transparent";f.innerHTML='<div class="reels">'+REELS.map(function(u){return '<iframe title="Reel de KH" loading="lazy" allowfullscreen src="'+u.replace(/\/?$/,"/")+'embed"></iframe>'}).join("")+'</div>';
+  }else{
+    f.innerHTML='<iframe title="Instagram de KH" loading="lazy" src="https://www.instagram.com/khcentermzt/embed"></iframe>';
+  }
+})();
+</script>
+<script>
+/* WhatsApp con palabra clave: así sabemos qué botón trajo a cada paciente (se mide como "WEB") */
+var NUM="526693338352";
+document.querySelectorAll("[data-kw]").forEach(function(a){
+  var kw=a.getAttribute("data-kw");
+  a.href="https://wa.me/"+NUM+"?text="+encodeURIComponent("Hola, quiero informes. "+kw+" (web)");
+  a.target="_blank";a.rel="noopener";
+});
+/* Abierto / cerrado según la hora de Mazatlán */
+(function(){
+  try{
+    var p=new Intl.DateTimeFormat("en-US",{timeZone:"America/Mazatlan",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date()),o={};
+    p.forEach(function(x){o[x.type]=x.value});
+    var d={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[o.weekday],m=(+o.hour%24)*60+(+o.minute);
+    var row=document.querySelector('tr[data-d="'+d+'"]');if(row)row.className="hoy";
+    var st=document.getElementById("status"),t=document.getElementById("st");
+    var abierto=d>=1&&d<=5&&((m>=480&&m<780)||(m>=900&&m<1200));
+    if(abierto){st.className="status open";t.textContent="Abierto ahora";}
+    else{t.textContent=(d>=1&&d<=5&&m<480)?"Abrimos hoy a las 8:00":(d>=1&&d<=5&&m>=780&&m<900)?"Abrimos hoy a las 15:00":(d==5&&m>=1200||d==6||d==0)?"Abrimos el lunes a las 8:00":"Abrimos mañana a las 8:00";}
+  }catch(e){document.getElementById("st").textContent="Lunes a viernes";}
+})();
+</script>
+</body>
+</html>
